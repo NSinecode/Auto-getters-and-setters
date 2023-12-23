@@ -22,7 +22,6 @@ void GetterVarDeclare(var other)
 {
     cout << other.type + " get" + firstSymbol2Upper(other.name) + "();" << endl;
 }
-
 void SetterVarDeclare(var other)
 {
     cout << "void set" + firstSymbol2Upper(other.name) + "(" + other.type + " " + other.name + ");" << endl;
@@ -30,12 +29,12 @@ void SetterVarDeclare(var other)
 
 void GetterVarOpinion(var other, string className)
 {
-    cout << other.type + " " + className + "::" + " get" + firstSymbol2Upper(other.name) + "();" << endl;
+    cout << other.type + " " + className + "::get" + firstSymbol2Upper(other.name) + "()" << endl;
     cout << "{\n" << "   return " + other.name + ";\n" << "}" << endl;
 }
 void SetterVarOpinion(var other, string className)
 {
-    cout << other.type + " " + className + "::" + " set" + firstSymbol2Upper(other.name) + "(" + other.type + " " + other.name + ");" << endl;
+    cout << other.type + " " + className + "::set" + firstSymbol2Upper(other.name) + "(" + other.type + " " + other.name + ")" << endl;
     cout << "{\n" << "   this-> " + other.name + " = " + other.name + ";\n" << "}" << endl;
 }
 
