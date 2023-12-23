@@ -34,7 +34,7 @@ void GetterVarOpinion(var other, string className)
 }
 void SetterVarOpinion(var other, string className)
 {
-    cout << other.type + " " + className + "::set" + firstSymbol2Upper(other.name) + "(" + other.type + " " + other.name + ")" << endl;
+    cout << "void " + className + "::set" + firstSymbol2Upper(other.name) + "(" + other.type + " " + other.name + ")" << endl;
     cout << "{\n" << "   this-> " + other.name + " = " + other.name + ";\n" << "}" << endl;
 }
 
